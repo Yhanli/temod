@@ -39,13 +39,11 @@
     "ScrollSpeechBorderWidth": 800,
     "ScrollSpeechOffset": -400, // This is negative and half of the width; Used as the horizontal offset.
     "QuestLogScrollingSpeechParentRect": {
-        "x": 158,//198
+        "x": 198,
         "y": 1015,
-        "width": 850,//770
+        "width": 770,
         "height": 254
     },
-"ModsScrollingTextWidth": 850,//Mods designed
-"ModsScrollControllerHeight": 332,//Mods designed
     // Lobby panel rects.
     "LobbyAnchor": {
         "x": 0.5
@@ -235,13 +233,13 @@
     },
     "FontColorSocketedColor": {
         "r": 255,
-        "g": 187,
-        "b": 255,
+        "g": 182,
+        "b": 193,
         "a": 255
     },
     "FontColorEtherealColor": {
-        "r": 136,
-        "g": 206,
+        "r": 0,
+        "g": 191,
         "b": 255,
         "a": 255
     },
@@ -277,10 +275,11 @@
     "XMediumFontSize": 28, // Usage:Secondary Action Center Buttons, Character list title and level text
     "MediumFontSize": 26, // Usage : Settings field text
     "SmallFontSize": 22,
-    "XSmallFontSize": 21,
+    "XSmallFontSize": 20,
     "TooltipFontSize": 36,
     "CinematicsFontSize": 32,
     "AddFriendModalFontSize": 26, // Usage: AddFriendModal needs to be the same size in all profiles to support IME
+    "GameNameFilterFontSize": 28, // Usage: it needs to be the same size in all profiles
     "ModTableRowHeight": 60,
     // K&M LV-mode in-game panels are just scaled up, thus we need
     // versions of fonts which can be used in panels.
@@ -1177,13 +1176,19 @@
         "height": 1150
     },
     "TutorialTooltipConsoleSoloRect": {
-        "x": 275,
+        "x": -200,
         "y": 451,
         "width": 900,
         "height": 700
     },
-    "TutorialTooltipConsoleMultiRect": {
-        "x": -1375,
+    "TutorialTooltipConsoleGameCreatorRect": {
+        "x": -1600,
+        "y": 451,
+        "width": 900,
+        "height": 700
+    },
+    "TutorialTooltipConsoleGameListRect": {
+        "x": -700,
         "y": 451,
         "width": 900,
         "height": 700
@@ -1280,7 +1285,7 @@
             }
         }
     },
-//monstersinfostle
+    //monstersinfostle
     "MonstersinfoToolTipStyle": {
         "fontStyle": {
         "alignment": {

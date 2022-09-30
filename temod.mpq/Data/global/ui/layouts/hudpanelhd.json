@@ -3,7 +3,7 @@
     "fields": {
         "priority": 100,
         "anchor": { "x": 0.5, "y": 1 },
-        "rect": { "x": -1454, "y": -412, "width": 2952, "height": 764 },
+        "rect": { "x": -1090, "y": -310, "width": 2952, "height": 764, "scale": 0.75 },
         "skillsOnRow": 13,
     },
     "children": [
@@ -33,7 +33,7 @@
                         "rect": { "y": -30 },
                         "fontType": "16pt",
                         "style": {
-                            "pointSize": "$XMediumLargeFontSize",
+                            "pointSize": 44,
                             "alignment": { "v": "bottom", "h": "center" },
                             "spacing" : "$MinimumSpacing",
                             "dropShadow": "$DefaultDropShadow",
@@ -79,7 +79,7 @@
                         "anchor": { "x": 0.5 },
                         "rect": { "y": -30 },
                         "style": {
-                            "pointSize": "$XMediumLargeFontSize",
+                            "pointSize": 44,
                             "alignment": { "v": "bottom", "h": "center" },
                             "spacing" : "$MinimumSpacing",
                             "dropShadow": "$DefaultDropShadow",
@@ -129,8 +129,6 @@
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
                         "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle",
                     }
                 },
                 {
@@ -307,8 +305,6 @@
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
                         "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle",
                     }
                 },
                 {
@@ -320,27 +316,25 @@
                 },
             ]
         },
-//-----------------
-    {
-      "type": "ButtonWidget",
-      "name": "messagePanel",
-      "fields":
-      {
-        "rect":
         {
-          "x": 1410,
-          "y": 290,
-          "scale": 0.45
+            "type": "ButtonWidget",
+            "name": "messagePanel",
+            "fields":
+            {
+            "rect":
+            {
+                "x": 1410,
+                "y": 290,
+                "scale": 0.45
+            },
+            "filename": "items\\misc\\quest\\horadric_cube",
+            "tooltipString": "@mod51096gameguidetxt1",
+            "onClickMessage": "PanelManager:TogglePanel:messagePanel",
+            "focusIndicatorVisible": true,
+            "hoveredFrame": 0,
+            "pressedFrame": 0
+            }
         },
-        "filename": "items\\misc\\quest\\horadric_cube",
-        "tooltipString": "@mod51096gameguidetxt1",
-        "onClickMessage": "PanelManager:TogglePanel:messagePanel",
-        "focusIndicatorVisible": true,
-        "hoveredFrame": 0,
-        "pressedFrame": 0
-      }
-    },
-//------
         {
             "type": "SkillSelectButtonWidget", "name": "RightSkillButton",
             "fields": {
@@ -354,8 +348,6 @@
                     "fields": {
                         "rect": "$SkillHotkeyTextRect",
                         "style": "$SkillHotkeyTextStyle",
-                        "useAltStyleIfDoesntFit": true,
-                        "altStyle": "$SkillHotkeyTextAltStyle",
                     }
                 },
                 {
@@ -392,7 +384,7 @@
                         "text": "123",
                         "rect": { "x": 2, "y": 60, "width": 130 },
                         "style": {
-                            "pointSize": "$MediumFontSize",
+                            "pointSize": 36,
                             "fontColor": "$FontColorGoldYellow",
                             "options": { "hideOverflow": true },
                         }
@@ -421,7 +413,7 @@
                         "rect": { "y": -3 },
                         "fontType": "16pt",
                         "style": {
-                            "pointSize": "$XMediumLargeFontSize",
+                            "pointSize": 40,
                             "alignment": { "v": "bottom", "h": "center" },
                             "spacing" : "$MinimumSpacing",
                             "dropShadow": "$DefaultDropShadow",
@@ -451,7 +443,7 @@
                         "rect": { "y": -3 },
                         "fontType": "16pt",
                         "style": {
-                            "pointSize": "$XMediumLargeFontSize",
+                            "pointSize": 40,
                             "alignment": { "v": "bottom", "h": "center" },
                             "spacing" : "$MinimumSpacing",
                             "dropShadow": "$DefaultDropShadow",
@@ -482,7 +474,7 @@
                         "rect": { "y": -3 },
                         "fontType": "16pt",
                         "style": {
-                            "pointSize": "$XMediumLargeFontSize",
+                            "pointSize": 40,
                             "alignment": { "v": "bottom", "h": "center" },
                             "spacing" : "$MinimumSpacing",
                             "dropShadow": "$DefaultDropShadow",
