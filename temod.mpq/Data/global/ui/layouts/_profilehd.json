@@ -39,11 +39,13 @@
     "ScrollSpeechBorderWidth": 800,
     "ScrollSpeechOffset": -400, // This is negative and half of the width; Used as the horizontal offset.
     "QuestLogScrollingSpeechParentRect": {
-        "x": 198,
+        "x": 158,//198
         "y": 1015,
-        "width": 770,
+        "width": 850,//770
         "height": 254
     },
+"ModsScrollingTextWidth": 850,//Mods designed
+"ModsScrollControllerHeight": 332,//Mods designed
     // Lobby panel rects.
     "LobbyAnchor": {
         "x": 0.5
@@ -233,13 +235,13 @@
     },
     "FontColorSocketedColor": {
         "r": 255,
-        "g": 182,
-        "b": 193,
+        "g": 187,
+        "b": 255,
         "a": 255
     },
     "FontColorEtherealColor": {
-        "r": 0,
-        "g": 191,
+        "r": 136,
+        "g": 206,
         "b": 255,
         "a": 255
     },
@@ -275,15 +277,17 @@
     "XMediumFontSize": 28, // Usage:Secondary Action Center Buttons, Character list title and level text
     "MediumFontSize": 26, // Usage : Settings field text
     "SmallFontSize": 22,
+    "XSmallFontSize": 21,
     "TooltipFontSize": 36,
     "CinematicsFontSize": 32,
     "AddFriendModalFontSize": 26, // Usage: AddFriendModal needs to be the same size in all profiles to support IME
-    "GameNameFilterFontSize": 28, // Usage: it needs to be the same size in all profiles
     "ModTableRowHeight": 60,
     // K&M LV-mode in-game panels are just scaled up, thus we need
     // versions of fonts which can be used in panels.
     "XMediumPanelFontSize": "$XMediumFontSize",
     "MediumPanelFontSize": "$MediumFontSize",
+    "ModsMediumPanelFontSize": "$SmallFontSize",// Usage : for Mods
+    "ModsScrollingTextFontSize": 28,// Usage : for Mods
     "SmallPanelFontSize": "$SmallFontSize",
     // Kerning
     "DefaultSpacing": {
@@ -1173,19 +1177,13 @@
         "height": 1150
     },
     "TutorialTooltipConsoleSoloRect": {
-        "x": -200,
+        "x": 275,
         "y": 451,
         "width": 900,
         "height": 700
     },
-    "TutorialTooltipConsoleGameCreatorRect": {
-        "x": -1600,
-        "y": 451,
-        "width": 900,
-        "height": 700
-    },
-    "TutorialTooltipConsoleGameListRect": {
-        "x": -700,
+    "TutorialTooltipConsoleMultiRect": {
+        "x": -1375,
         "y": 451,
         "width": 900,
         "height": 700
@@ -1282,6 +1280,18 @@
             }
         }
     },
+//monstersinfostle
+    "MonstersinfoToolTipStyle": {
+        "fontStyle": {
+        "alignment": {
+            "h": "left",
+            "v": "center"
+        },
+            "options": {
+                "newlineHandling": "standard"
+            }
+        }
+    },
     //"rect": "$RuneWordFirstRuneRect"
     "RuneWordFirstRuneRect": {
         "x": 66,
@@ -1344,71 +1354,71 @@
         }
     },
     "FileRune1": "items\\misc\\rune\\El_rune",
-    "TooltipRune1": "ÿc8@r01@jghelp50601rune01tooltip",
+    "TooltipRune1": "@r01@jghelp50601rune01tooltip",
     "FileRune2": "items\\misc\\rune\\Eld_rune",
-    "TooltipRune2": "ÿc8@r02@jghelp50602rune02tooltip",
+    "TooltipRune2": "@r02@jghelp50602rune02tooltip",
     "FileRune3": "items\\misc\\rune\\Tir_rune",
-    "TooltipRune3": "ÿc8@r03@jghelp50603rune03tooltip",
+    "TooltipRune3": "@r03@jghelp50603rune03tooltip",
     "FileRune4": "items\\misc\\rune\\Nef_rune",
-    "TooltipRune4": "ÿc8@r04@jghelp50604rune04tooltip",
+    "TooltipRune4": "@r04@jghelp50604rune04tooltip",
     "FileRune5": "items\\misc\\rune\\Eth_rune",
-    "TooltipRune5": "ÿc8@r05@jghelp50605rune05tooltip",
+    "TooltipRune5": "@r05@jghelp50605rune05tooltip",
     "FileRune6": "items\\misc\\rune\\Ith_rune",
-    "TooltipRune6": "ÿc8@r06@jghelp50606rune06tooltip",
+    "TooltipRune6": "@r06@jghelp50606rune06tooltip",
     "FileRune7": "items\\misc\\rune\\Tal_rune",
-    "TooltipRune7": "ÿc8@r07@jghelp50607rune07tooltip",
+    "TooltipRune7": "@r07@jghelp50607rune07tooltip",
     "FileRune8": "items\\misc\\rune\\Ral_rune",
-    "TooltipRune8": "ÿc8@r08@jghelp50608rune08tooltip",
+    "TooltipRune8": "@r08@jghelp50608rune08tooltip",
     "FileRune9": "items\\misc\\rune\\Ort_rune",
-    "TooltipRune9": "ÿc8@r09@jghelp50609rune09tooltip",
+    "TooltipRune9": "@r09@jghelp50609rune09tooltip",
     "FileRune10": "items\\misc\\rune\\Thul_rune",
-    "TooltipRune10": "ÿc8@r10@jghelp50610rune10tooltip",
+    "TooltipRune10": "@r10@jghelp50610rune10tooltip",
     "FileRune11": "items\\misc\\rune\\Amn_rune",
-    "TooltipRune11": "ÿc8@r11@jghelp50611rune11tooltip",
+    "TooltipRune11": "@r11@jghelp50611rune11tooltip",
     "FileRune12": "items\\misc\\rune\\Sol_rune",
-    "TooltipRune12": "ÿc8@r12@jghelp50612rune12tooltip",
+    "TooltipRune12": "@r12@jghelp50612rune12tooltip",
     "FileRune13": "items\\misc\\rune\\Shael_rune",
-    "TooltipRune13": "ÿc8@r13@jghelp50613rune13tooltip",
+    "TooltipRune13": "@r13@jghelp50613rune13tooltip",
     "FileRune14": "items\\misc\\rune\\Dol_rune",
-    "TooltipRune14": "ÿc8@r14@jghelp50614rune14tooltip",
+    "TooltipRune14": "@r14@jghelp50614rune14tooltip",
     "FileRune15": "items\\misc\\rune\\Hel_rune",
-    "TooltipRune15": "ÿc8@r15@jghelp50615rune15tooltip",
+    "TooltipRune15": "@r15@jghelp50615rune15tooltip",
     "FileRune16": "items\\misc\\rune\\Io_rune",
-    "TooltipRune16": "ÿc8@r16@jghelp50616rune16tooltip",
+    "TooltipRune16": "@r16@jghelp50616rune16tooltip",
     "FileRune17": "items\\misc\\rune\\Lum_rune",
-    "TooltipRune17": "ÿc8@r17@jghelp50617rune17tooltip",
+    "TooltipRune17": "@r17@jghelp50617rune17tooltip",
     "FileRune18": "items\\misc\\rune\\Ko_rune",
-    "TooltipRune18": "ÿc8@r18@jghelp50618rune18tooltip",
+    "TooltipRune18": "@r18@jghelp50618rune18tooltip",
     "FileRune19": "items\\misc\\rune\\Fal_rune",
-    "TooltipRune19": "ÿc8@r19@jghelp50619rune19tooltip",
+    "TooltipRune19": "@r19@jghelp50619rune19tooltip",
     "FileRune20": "items\\misc\\rune\\Lem_rune",
-    "TooltipRune20": "ÿc8@r20@jghelp50620rune20tooltip",
+    "TooltipRune20": "@r20@jghelp50620rune20tooltip",
     "FileRune21": "items\\misc\\rune\\Pul_rune",
-    "TooltipRune21": "ÿc8@r21@jghelp50621rune21tooltip",
+    "TooltipRune21": "@r21@jghelp50621rune21tooltip",
     "FileRune22": "items\\misc\\rune\\Um_rune",
-    "TooltipRune22": "ÿc8@r22@jghelp50622rune22tooltip",
+    "TooltipRune22": "@r22@jghelp50622rune22tooltip",
     "FileRune23": "items\\misc\\rune\\Mal_rune",
-    "TooltipRune23": "ÿc8@r23@jghelp50623rune23tooltip",
+    "TooltipRune23": "@r23@jghelp50623rune23tooltip",
     "FileRune24": "items\\misc\\rune\\Ist_rune",
-    "TooltipRune24": "ÿc8@r24@jghelp50624rune24tooltip",
+    "TooltipRune24": "@r24@jghelp50624rune24tooltip",
     "FileRune25": "items\\misc\\rune\\Gul_rune",
-    "TooltipRune25": "ÿc8@r25@jghelp50625rune25tooltip",
+    "TooltipRune25": "@r25@jghelp50625rune25tooltip",
     "FileRune26": "items\\misc\\rune\\Vex_rune",
-    "TooltipRune26": "ÿc8@r26@jghelp50626rune26tooltip",
+    "TooltipRune26": "@r26@jghelp50626rune26tooltip",
     "FileRune27": "items\\misc\\rune\\Ohm_rune",
-    "TooltipRune27": "ÿc8@r27@jghelp50627rune27tooltip",
+    "TooltipRune27": "@r27@jghelp50627rune27tooltip",
     "FileRune28": "items\\misc\\rune\\Lo_rune",
-    "TooltipRune28": "ÿc8@r28@jghelp50628rune28tooltip",
+    "TooltipRune28": "@r28@jghelp50628rune28tooltip",
     "FileRune29": "items\\misc\\rune\\Sur_rune",
-    "TooltipRune29": "ÿc8@r29@jghelp50629rune29tooltip",
+    "TooltipRune29": "@r29@jghelp50629rune29tooltip",
     "FileRune30": "items\\misc\\rune\\Ber_rune",
-    "TooltipRune30": "ÿc8@r30@jghelp50630rune30tooltip",
+    "TooltipRune30": "@r30@jghelp50630rune30tooltip",
     "FileRune31": "items\\misc\\rune\\Jah_rune",
-    "TooltipRune31": "ÿc8@r31@jghelp50631rune31tooltip",
+    "TooltipRune31": "@r31@jghelp50631rune31tooltip",
     "FileRune32": "items\\misc\\rune\\Cham_rune",
-    "TooltipRune32": "ÿc8@r32@jghelp50632rune32tooltip",
+    "TooltipRune32": "@r32@jghelp50632rune32tooltip",
     "FileRune33": "items\\misc\\rune\\Zod_rune",
-    "TooltipRune33": "ÿc8@r33@jghelp50633rune33tooltip",
+    "TooltipRune33": "@r33@jghelp50633rune33tooltip",
     "RuneUpWidgetRect": {
         "x": 0,
         "y": 0,

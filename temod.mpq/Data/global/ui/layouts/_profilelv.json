@@ -8,7 +8,9 @@
     "ScrollSpeechWidth": 1050,
     "ScrollSpeechBorderWidth": 1150,
     "ScrollSpeechOffset": -525, // This is negative and half of the width; Used as the horizontal offset.
-    "QuestLogScrollingSpeechParentRect": { "x": 298, "y": 1190, "width": 770, "height": 254 },
+    "QuestLogScrollingSpeechParentRect": { "x": 168, "y": 1190, "width": 1000, "height": 254 },// "x": 298, "y": 1190, "width": 770, "height": 254
+    "ModsScrollingTextWidth": 1000,//Mods designed
+    "ModsScrollControllerHeight": 372,//Mods designed
 
     "StyleWeaponSwapTabs": {
         "fontColor": "$FontColorLightGold",
@@ -28,6 +30,8 @@
     // versions of fonts which can be used in panels.
     "XMediumPanelFontSize": 28,
     "MediumPanelFontSize": 26,
+    "ModsMediumPanelFontSize": 26,// Usage : Large Font Mode for Mods
+    "ModsScrollingTextFontSize": 32,// Usage : Large Font Mode for Mods
     "SmallPanelFontSize": 22,
 
     "XMediumFontSize": 32,
@@ -63,8 +67,8 @@
         "MagicColor": "$FontColorBlue",
         "SetColor": "$FontColorGreen",
         "UniqueColor": "$FontColorGoldYellow",
-        "SocketedColor": "$FontColorGrey",
-        "EtherealColor":"$FontColorGrey",
+        "SocketedColor": "$FontColorSocketedColor",//$FontColorGrey
+        "EtherealColor":"$FontColorEtherealColor",//$FontColorGrey
         "HealthPotionColor":"$FontColorWhite",
         "ManaPotionColor": "$FontColorWhite",
         "RejuvPotionColor": "$FontColorWhite",
@@ -112,7 +116,6 @@
 
     // Account Linking
     "AccountLinkingTileRect": { "x": -875, "y": 561, "width": 1750, "height": 1100 },
-    "AccountLinkingActiveUserRect": { "x": 50 , "y": 10, "width": 1650, "height": 160 },
     "AccountLinkingDescriptionRect": { "x": 50 , "y": 180, "width": 1650, "height": 160 },
     "AccountLinkingUserCodeRect": { "x": 50 , "y": 390, "width": 1650, "height": 215 },
     "AccountLinkingUrlRect": { "x": 50 , "y": 625, "width": 1650, "height": 110 },
@@ -137,9 +140,8 @@
     "TutorialTooltipConsoleTabsRect": { "x": -675, "y": 751, "width": 900, "height": 800 },
     "TutorialTooltipConsoleOnlineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
     "TutorialTooltipConsoleOfflineRect": { "x": -1375, "y": 451, "width": 900, "height": 1400 },
-    "TutorialTooltipConsoleSoloRect": { "x": -200, "y": 451, "width": 900, "height": 800 },
-    "TutorialTooltipConsoleGameCreatorRect": { "x": -1600, "y": 451, "width": 900, "height": 800 },
-    "TutorialTooltipConsoleGameListRect": { "x": -700, "y": 451, "width": 900, "height": 800 },
+    "TutorialTooltipConsoleSoloRect": { "x": 275, "y": 451, "width": 900, "height": 800 },
+    "TutorialTooltipConsoleMultiRect": { "x": -1375, "y": 451, "width": 900, "height": 800 },
 
     "TooltipConfirmSmall": { "x": 200, "y": 300 },
     "TooltipDismissSmall": { "x": 200, "y": 450 },
@@ -149,8 +151,4 @@
     "TooltipDismissLarge": { "x": 200, "y": 900 },
     "TooltipConfirmXL": { "x": 200, "y": 1050 },
     "TooltipDismissXL": { "x": 200, "y": 1200 },
-
-    // Join game tweaks.
-    "JoinGamePlayerEntryHeight": 140,
-    "JoinGamePlayerNameHeight": 100,
 }

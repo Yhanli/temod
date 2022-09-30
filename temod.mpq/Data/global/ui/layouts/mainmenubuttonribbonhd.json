@@ -95,7 +95,7 @@
                     "type": "TextBoxWidget",
                     "name": "Text",
                     "fields": {
-                        "text": "Happy Birthday to Ted",
+                        "text": "@modsnamel",
                         "rect": {
                             "x": 165,
                             "y": 1320,
@@ -112,7 +112,7 @@
                     "type": "TextBoxWidget",
                     "name": "Text",
                     "fields": {
-                        "text": "★TeMod★ v4.6.0",
+                        "text": "@modsversion",
                         "rect": {
                             "x": 165,
                             "y": 1380,
@@ -129,7 +129,7 @@
                     "type": "TextBoxWidget",
                     "name": "Text",
                     "fields": {
-                        "text": "2022.07.01",
+                        "text": "@modsupdatedate",
                         "rect": {
                             "x": 165,
                             "y": 1440,

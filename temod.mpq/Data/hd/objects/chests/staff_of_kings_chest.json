@@ -37,18 +37,21 @@
   },
   "type": "UnitDefinition",
   "name": "staff_of_kings_chest",
-  "entities": [
+  "entities":
+  [
     {
       "type": "Entity",
       "name": "entity_root",
       "id": 1674426269,
-      "components": [
+      "components":
+      [
         {
           "type": "UnitRootComponent",
           "name": "component_root",
           "state_machine_filename": "data/hd/objects/chests/horadric_cube_chest/horadric_cube_chest_state_machine.json",
           "doNotInheritRotation": false,
-          "rotationOverride": {
+          "rotationOverride":
+          {
             "x": 0.0,
             "y": 0.3826834,
             "z": 0.0,
@@ -57,7 +60,9 @@
           "doNotUseHDHeight": false,
           "hideAllMeshWhenInOpenedMode": false,
           "onCreateEventName": "",
-          "animations": []
+          "animations":
+          [
+          ]
         },
         {
           "type": "SkeletonDefinitionComponent",
@@ -70,7 +75,8 @@
       "type": "Entity",
       "name": "entity_torso",
       "id": 2529750101,
-      "components": [
+      "components":
+      [
         {
           "type": "UnitPartComponent",
           "name": "component_part_torso",
@@ -92,26 +98,66 @@
         {
           "type": "TransformDefinitionComponent",
           "name": "entity_torso_TransformDefinition",
-          "position": { "x": 0.8, "y": 0.0, "z": 0.8 },
-          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
-          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "position":
+          {
+            "x": 0.8,
+            "y": 0.0,
+            "z": 0.8
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
           "inheritOnlyPosition": false
         }
       ]
     },
     {
       "type": "Entity",
-      "name": "entity_root",
-      "id": 1259551842,
-      "components": [
+      "name": "vfx",
+      "id": 856925902,
+      "components":
+      [
         {
           "type": "VfxDefinitionComponent",
-          "name": "entity_root_VfxDefinition",
-          "filename": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles",
-          "hardKillOnDestroy": true
+          "name": "vfx_VfxDefinition",
+          "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+          "hardKillOnDestroy": false
+        },
+        {
+          "type": "TransformDefinitionComponent",
+          "name": "vfx_TransformDefinition",
+          "position":
+          {
+            "x": 0.0,
+            "y": -0.5,
+            "z": 1.0
+          },
+          "orientation":
+          {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0,
+            "w": 1.0
+          },
+          "scale":
+          {
+            "x": 1.0,
+            "y": 1.0,
+            "z": 1.0
+          },
+          "inheritOnlyPosition": false
         }
       ]
     },
-    
   ]
 }

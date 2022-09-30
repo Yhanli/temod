@@ -3,17 +3,18 @@
     "particles": [
       {
         "path": "data/hd/vfx/particles/objects/env_pillars/steeg_stone/vfx_steeg_stone.particles"
-      },
-      {
-        "path": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles"
       }
     ],
     "models": [
       {
         "path": "data/hd/objects/env_pillars/steeg_stone/model/special1.model"
       },
-      { "path": "data/hd/objects/env_pillars/steeg_stone/model/torso.model" },
-      { "path": "data/hd/vfx/meshes/fx_mesh_fire_cylinder.model" }
+      {
+        "path": "data/hd/objects/env_pillars/steeg_stone/model/torso.model"
+      },
+      {
+        "path": "data/hd/vfx/meshes/fx_mesh_fire_cylinder.model"
+      }
     ],
     "skeletons": [
       {
@@ -31,7 +32,9 @@
       {
         "path": "data/hd/objects/env_pillars/steeg_stone/texture/steeg_stone_orm.texture"
       },
-      { "path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient_06.texture" }
+      {
+        "path": "data/hd/vfx/textures/gradient/T_FX_flame_gradient_06.texture"
+      }
     ],
     "physics": [],
     "json": [],
@@ -53,9 +56,9 @@
           "state_machine_filename": "",
           "doNotInheritRotation": false,
           "rotationOverride": {
-            "x": 0.0,
+            "x": 0,
             "y": 0.3826834,
-            "z": 0.0,
+            "z": 0,
             "w": 0.9238795
           },
           "doNotUseHDHeight": false,
@@ -129,23 +132,43 @@
           "type": "VfxDefinitionComponent",
           "name": "vfx_VfxDefinition",
           "filename": "data/hd/vfx/particles/objects/env_pillars/steeg_stone/vfx_steeg_stone.particles",
-          "hardKillOnDestroy": true
+          "hardKillOnDestroy": false
         }
       ]
     },
     {
-      "type": "Entity",
-      "name": "entity_root",
-      "id": 1259551842,
-      "components": [
-        {
-          "type": "VfxDefinitionComponent",
-          "name": "entity_root_VfxDefinition",
-          "filename": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles",
-          "hardKillOnDestroy": true
-        }
-      ]
-    },
-    
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.5,
+                    "y": 2.5,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
   ]
 }

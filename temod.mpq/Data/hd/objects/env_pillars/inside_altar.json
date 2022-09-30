@@ -6,17 +6,18 @@
       },
       {
         "path": "data/hd/vfx/particles/objects/env_pillars/inside_altar/vfx_inside_altar_candles.particles"
-      },
-      {
-        "path": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles"
       }
     ],
     "models": [
       {
         "path": "data/hd/objects/env_pillars/inside_altar/model/special1.model"
       },
-      { "path": "data/hd/objects/env_pillars/inside_altar/model/torso.model" },
-      { "path": "data/hd/vfx/meshes/fx_mesh_planardisc.model" }
+      {
+        "path": "data/hd/objects/env_pillars/inside_altar/model/torso.model"
+      },
+      {
+        "path": "data/hd/vfx/meshes/fx_mesh_planardisc.model"
+      }
     ],
     "skeletons": [
       {
@@ -58,9 +59,9 @@
           "state_machine_filename": "",
           "doNotInheritRotation": false,
           "rotationOverride": {
-            "x": 0.0,
+            "x": 0,
             "y": 0.3826834,
-            "z": 0.0,
+            "z": 0,
             "w": 0.9238795
           },
           "doNotUseHDHeight": false,
@@ -77,7 +78,7 @@
           "type": "MountableObjectComponent",
           "name": "inside_altar_MountableObjectComponent",
           "mountId": -2035365975,
-          "mountRadius": 5.0
+          "mountRadius": 5
         }
       ]
     },
@@ -140,14 +141,27 @@
           "type": "VfxDefinitionComponent",
           "name": "vfx_VfxDefinition",
           "filename": "data/hd/vfx/particles/objects/env_pillars/inside_altar/vfx_inside_altar.particles",
-          "hardKillOnDestroy": true
+          "hardKillOnDestroy": false
         },
         {
           "type": "TransformDefinitionComponent",
           "name": "vfx_TransformDefinition",
-          "position": { "x": -0.05, "y": 6.6, "z": 4.9 },
-          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
-          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "position": {
+            "x": -0.05,
+            "y": 6.6,
+            "z": 4.9
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
           "inheritOnlyPosition": false
         }
       ]
@@ -161,14 +175,27 @@
           "type": "VfxDefinitionComponent",
           "name": "vfx_fire_left_VfxDefinition",
           "filename": "data/hd/vfx/particles/objects/env_pillars/inside_altar/vfx_inside_altar.particles",
-          "hardKillOnDestroy": true
+          "hardKillOnDestroy": false
         },
         {
           "type": "TransformDefinitionComponent",
           "name": "vfx_fire_left_TransformDefinition",
-          "position": { "x": -0.05, "y": 6.6, "z": -2.9 },
-          "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
-          "scale": { "x": 1.0, "y": 1.0, "z": 1.0 },
+          "position": {
+            "x": -0.05,
+            "y": 6.6,
+            "z": -2.9
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+          },
           "inheritOnlyPosition": false
         }
       ]
@@ -182,23 +209,43 @@
           "type": "VfxDefinitionComponent",
           "name": "vfx_candles_VfxDefinition",
           "filename": "data/hd/vfx/particles/objects/env_pillars/inside_altar/vfx_inside_altar_candles.particles",
-          "hardKillOnDestroy": true
+          "hardKillOnDestroy": false
         }
       ]
     },
     {
-      "type": "Entity",
-      "name": "entity_root",
-      "id": 1259551842,
-      "components": [
-        {
-          "type": "VfxDefinitionComponent",
-          "name": "entity_root_VfxDefinition",
-          "filename": "data/hd/vfx/particles/character/enemy/valkyrie/valkyrie_aura.particles",
-          "hardKillOnDestroy": true
-        }
-      ]
-    },
-    
+        "type": "Entity",
+        "name": "vfx",
+        "id": 856925902,
+        "components": [
+            {
+                "type": "VfxDefinitionComponent",
+                "name": "vfx_VfxDefinition",
+                "filename": "data/hd/vfx/particles/objects/shrines_other/shrine_baal_magic/vfx_shrine_baal_magic.particles",
+                "hardKillOnDestroy": false
+            },
+            {
+                "type": "TransformDefinitionComponent",
+                "name": "vfx_TransformDefinition",
+                "position": {
+                    "x": 0.5,
+                    "y": 2.5,
+                    "z": 1.5
+                },
+                "orientation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0,
+                    "w": 1.0
+                },
+                "scale": {
+                    "x": 1.0,
+                    "y": 1.0,
+                    "z": 1.0
+                },
+                "inheritOnlyPosition": false
+            }
+        ]
+    }
   ]
 }
